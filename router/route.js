@@ -1,7 +1,7 @@
 const express=require('express');
 const router=express.Router();
 const mongo=require('mongojs');
-const db = mongo('mongodb://neendreams:1234567@ds217138.mlab.com:17138/angular-course-db', ['angular-course-db']); //Name and array
+const db = mongo('mongodb://USERNAME:PASSWORD@ds217138.mlab.com:17138/DBNAME', ['DBNAME']); //Name and array
 //Get API. The function is requesting our data and responding from our server. 
 //Changing the URL to /GetList. This is the only one that can be read in the browser.
 router.get('/GetList', function (req, res) {
